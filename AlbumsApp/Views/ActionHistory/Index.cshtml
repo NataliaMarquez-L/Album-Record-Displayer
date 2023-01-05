@@ -1,0 +1,18 @@
+﻿@model List<string>
+@if (Model.Count == 0)
+{
+                <div class=" jumbotron">
+                    <h2>No actions performed</h2>
+                </div>
+}
+else
+{
+<div>
+    <ul>
+        @foreach (string action in Model)
+        {
+                    <li class="list-group-item">@action</li>
+        }
+                
+    </ul>
+</div>}
